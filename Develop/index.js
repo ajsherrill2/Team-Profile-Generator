@@ -141,14 +141,28 @@ const addEmployee = async () => {
             },
             {
               type: "input",
-              name: "username",
+              name: "github",
               message: "What is your team member's GitHub username?",
-              when: (input) => input.role === 'Engineer' || input.role === 'Intern',
+              when: (input) => input.role === 'Engineer',
               validate: (nameInput) => {
                 if (nameInput) {
                   return true;
                 } else {
                   console.log("Please enter employee's username!");
+                  return false;
+                }
+              },
+            },
+            {
+              type: "input",
+              name: "school",
+              message: "What is your team member's school?",
+              when: (input) => input.role === 'Intern',
+              validate: (nameInput) => {
+                if (nameInput) {
+                  return true;
+                } else {
+                  console.log("Please enter interns's school!");
                   return false;
                 }
               },
