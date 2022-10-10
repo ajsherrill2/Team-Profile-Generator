@@ -1,6 +1,5 @@
-// employee constructor test cases
+// engineer constructor test cases
 const Engineer = require("../lib/engineer");
-// const Employee = require("../lib/employee");
 
 describe("Engineer", () => {
   // Test for all use cases when initializing a new
