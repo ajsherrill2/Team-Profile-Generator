@@ -1,5 +1,5 @@
 // employee constructor import
-const Employee = require("./employee");
+const Employee = require("./Employee");
 
 // intern constructor
 class Intern extends Employee {

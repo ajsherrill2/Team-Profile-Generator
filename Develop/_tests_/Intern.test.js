@@ -1,8 +1,8 @@
 // intern constructor test cases
-const Intern = require("../lib/intern");
+const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
-  // Test for all use cases when initializing a new
+  // Test for all use cases when initializing a new intern
   describe("initialization", () => {
     it("should create a new intern object with a name, id, email and school name", () => {
       const intern = new Intern("Adam", "123", "test@test.com", "UT");
