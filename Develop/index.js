@@ -251,7 +251,7 @@ function startApp() {
 const writeToFile = () => {
   try {
     writeFile("./dist/index.html", generateHTML(teamArray));
-    writeFile("./dist/style.css", generateCSS())
+    writeFile("./dist/style.css", generateCSS());
     console.log('Generating HTML...');
   } catch (e) {
     console.log(e);
